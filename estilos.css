@@ -1,0 +1,686 @@
+/* Josefina Jubin - 268967 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Homemade+Apple&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: #5D808D;
+    scroll-behavior: smooth;
+} 
+
+
+#banner{
+    background-image: url(img/banner.jpg);
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+  
+  #banner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.551), rgba(0, 0, 0, 0.138));
+    z-index: 1;
+  }
+  
+  #banner > * {
+    position: relative;
+    z-index: 1;
+  }
+
+#logo{
+    width: 120px;
+}
+
+header{
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.dropdown-container {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  details {
+    position: relative;
+  }
+
+  summary {
+    background-color: #DFAB5C;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    list-style: none;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  /* Ocultamos la lista por defecto (aunque no es necesario si está fuera de <summary>) */
+  .dropdown-content {
+    display: none;
+  }
+
+  /* Cuando el menú está abierto, se muestra */
+  details[open] .dropdown-content {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 100%; /* Aparece a la izquierda del botón */
+    width: 180px;
+    border: 1px solid #DFAB5C;
+    background-color: #DFAB5C;
+    border-radius: 5px;
+    text-align: right;
+    margin-right: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+
+  .dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+  }
+
+header nav div{
+    display: none;
+}
+
+header nav img{
+    width: 25px;
+}
+
+#banner div{
+    justify-content: center;
+    text-align: center;
+
+}
+
+#banner div h3{
+
+    font-size: 1em;
+}
+
+h1, h2{
+    font-family: "Covered By Your Grace", cursive;
+    color: white;
+}
+
+h2{
+    font-size: 2em;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h3{
+    font-weight: 500;
+    color: white;
+}
+
+#formulario {
+    margin: 20px 15px;
+    color: white;
+    z-index: 4;
+}
+
+
+#formulario div {
+    background-color: #313B48;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 15px 10px;
+}
+
+#formulario p{
+    margin-bottom: 1em;
+}
+
+#formulario form{
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario form input:nth-of-type(1),
+#formulario form select{
+    background-color: #AFC9D9;
+    padding: 10px 5px;
+    border-radius: 8px;
+    margin-top: 5px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+#formulario form button{
+    background-color: #5D808D;
+    padding: 10px 5px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+#formulario form input:nth-of-type(2):hover{
+    background-color: #AFC9D9;
+}
+
+#Obras{
+    background-image: url(img/Fondo\ articles.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 20px 15px;
+}
+
+
+
+#Obras article img{
+    width: 100%;      
+    height: 200px;     
+    display: block;  
+    object-fit: cover;
+}
+
+#Obras article{
+    background-color: #DFAB5C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 4px 4px #313B48;
+    position: relative;
+}
+
+#Obras article p{
+    color: #554442;
+}
+
+#Obras h3{
+    margin: 0.3em 0;
+    font-family: "Covered By Your Grace", cursive;
+    font-size: 2em;
+}
+
+#Obras h2{
+    font-size: 5em;
+}
+
+#Obras a{
+    color: white;
+    background-color: #D3763B;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 1em;
+    transition: 0.2s;
+}
+
+#Obras a:hover{
+    border: solid 2px #554442;
+    font-weight: 600;
+}
+
+#obrasDiv article div{
+    padding: 8px 25px;
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    font-size: 20px;
+    color: white;
+    background-color: #313B48;
+}
+
+#obrasDiv article:nth-of-type(2) div{
+    background-color: #5D808D;
+}
+
+#obrasDiv article:nth-of-type(3) div{
+    background-color: #AFC9D9;
+}
+
+#Obras #article4 img, #Obras #article5 img{
+    display: none;
+
+}
+
+#Grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100vw;
+    overflow-x: hidden;
+    padding: 0 15px;
+}
+
+#Grid article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+}
+
+#Grid article:nth-of-type(1) {
+    background-color: #DFAB5C;
+    font-size: 2em;
+}
+
+#Grid article:nth-of-type(2){
+    background-image: url(img/montaneas.png);
+    background-size: cover;
+}
+
+
+#Grid article:nth-of-type(3){
+    background-image: url(img/CezanneTulips.jpg);
+    background-position: middle;
+    background-size: cover;
+    font-size: 1.5em;
+}
+
+#Grid article:nth-of-type(3) img{
+    transform: rotate(90deg);
+    width: 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#Grid article:nth-of-type(3) a{
+    padding: 10px 15px;
+    border-radius: 30px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    font-weight: 700;
+    background-image: url(img/boton.jpg);
+    background-size: cover;
+    filter: drop-shadow(3px 3px black);
+    transition: 0.3s;
+}
+
+#Grid article:nth-of-type(3) a:hover{
+    transform: scale(1.1);
+}
+
+#Grid article:nth-of-type(4){
+    display: none;
+}
+
+#Grid article:nth-of-type(5){
+    background-color: #DFAB5C;
+    h1{
+        font-size: 4.5em;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+}
+
+#Grid article:nth-of-type(6){
+    background-image: url(img/paisajePueblo.jpg);
+    background-size: cover;
+}
+
+
+#Grid article img{
+    max-height: 100%;
+    object-fit: cover;
+}
+
+
+
+footer{
+    background-color: #5D808D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px 15px;
+    color: white;
+    gap: 0.5em;
+    font-family: "Covered By Your Grace", cursive ;
+    font-size: 1.5em;
+}
+
+footer img{
+    width: 20px;
+}
+
+
+@media all and (min-width: 768px) {
+    .dropdown-container{
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 15px;
+        gap: 2em;
+        text-align: center;
+    }
+
+    header nav {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        text-align: center;
+    }
+
+    header nav div {
+        display: flex;
+        gap: 1.5em;
+        text-align: center;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    header nav div a{
+        padding: 10px 10px;
+        color: white;
+        font-weight: 400;
+        border-radius: 30px;
+        border-style: solid;
+        border-width: 2.5px;
+        border-color: #DFAB5C;
+        transition: 0.3s;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #titulosBanner{
+        margin-top: 5em;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+
+    #formulario form{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #formulario form input:nth-of-type(1),
+#formulario form select{
+width: 35%;
+    margin-top: 0px;
+}
+
+#formulario form input:nth-of-type(2){
+margin-top: 0px;
+}
+
+
+#obrasDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#articlesChicos, #Obras article{
+    width: 49%;
+}
+
+#articlesChicos article{
+    width: 100%;
+}
+
+#Obras{
+    text-align: center;
+}
+
+#Obras article{
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+#Obras article img{
+    width: 100%;      
+    height: 200px;     
+    display: block;   
+    object-fit: cover;
+}
+
+footer{
+    flex-direction: row;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: right;
+    gap: 2em;
+}
+
+#Grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 30vh);
+    padding: 0 15px;
+}
+
+#Grid article:nth-of-type(1) {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 1.6em;
+    padding: 0 15px;
+}
+
+#Grid article:nth-of-type(2) {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#Grid article:nth-of-type(3) {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+}
+
+#Grid article:nth-of-type(4) {
+    grid-column: span 2;
+    grid-row: 3;
+    background-image: url(img/lago.png);
+    background-size: cover;
+    display: block;
+    text-align: start;
+    h3 {
+        margin-top: 15%;
+        margin-left: 25px;
+        font-size: 2em;
+    }
+    p{
+        font-size: 1.5em;
+        color: white;
+        margin-left: 25px;
+    }
+}
+
+#Grid article:nth-of-type(5) {
+    grid-column: 1;
+    grid-row: 4;
+    background-color: #DFAB5C;
+
+}
+
+#Grid article:nth-of-type(6) {
+    grid-column: 2;
+    grid-row: 4;
+    background-image: url(img/paisajePueblo.jpg);
+    background-size: cover;
+}
+
+#Grid article {
+    height: 100%;
+    width: 100%;
+}
+
+}
+
+@media all and (min-width: 1024px) { 
+
+    header{
+        padding: 25px 40px
+    }
+
+    header nav div a:hover{
+        background-color: #DFAB5C;
+        font-weight: 600;
+    }
+
+
+    #Obras #article4 img, #Obras #article5 img{
+        display: block;
+    
+    }
+    
+    #Obras article img{
+        width: 100%;      
+        height: 300px;    
+        display: block;   
+        object-fit: cover;
+    }
+
+    #Obras{
+        justify-content: center;
+    }
+
+    #Obras article{
+        width: 30%;
+    }
+
+    #articlesChicos{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #articlesChicos article{
+        width: 30%;
+        margin-left: 4.5em;
+    }
+
+    #banner{
+        position: relative;
+    }
+
+    #formulario{
+        position: absolute;
+        bottom: 45%;
+        right: 20px;
+        width: 35%;
+    }
+
+    #formulario form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #titulosBanner{
+        width: 58%;
+        margin-left: 2em;
+        h3, h1{
+            text-align: start;
+        }
+    }
+    
+
+    #formulario form input:nth-of-type(1),
+#formulario form select{
+width: 100%;
+    margin-top: 1em;
+}
+
+#formulario form button{
+margin-top: 2em;
+}
+
+#Grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 30vh);
+    padding: 100px 0 0 0;
+}
+
+#Grid article:nth-of-type(1) {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: #DFAB5C;
+    font-size: 1.8em;
+    padding: 0 15px;
+}
+
+#Grid article:nth-of-type(2) {
+    grid-column: 1;
+    grid-row: 2;
+    background-image: url(img/montaneas.png);
+    background-size: cover;
+}
+
+#Grid article:nth-of-type(3) {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    background-image: url(img/CezanneTulips.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#Grid article:nth-of-type(4) {
+    grid-column: 3 / span 2;
+    grid-row: 1;
+    background-color: #ccc;
+    p{
+        font-size: 1.2em;
+        margin-right: 15px;
+    }
+}
+
+#Grid article:nth-of-type(5) {
+    grid-column: 3;
+    grid-row: 2;
+    background-color: #DFAB5C;
+}
+
+#Grid article:nth-of-type(6) {
+    grid-column: 4;
+    grid-row: 2;
+    background-image: url(img/paisajePueblo.jpg);
+    background-size: cover;
+}
+
+#Grid article {
+    width: 100%;
+    height: 100%;
+}
+}
