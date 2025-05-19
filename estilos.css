@@ -339,11 +339,12 @@ h3{
 
 #Grid article:nth-of-type(5){
     background-color: #DFAB5C;
-    h1{
-        font-size: 4.5em;
-        line-height: 50px;
-        margin-bottom: 10px;
-    }
+}
+
+#Grid article:nth-of-type(5) h1 {
+    font-size: 4.5em;
+    line-height: 50px;
+    margin-bottom: 10px;
 }
 
 #Grid article:nth-of-type(6){
@@ -514,17 +515,19 @@ footer{
     background-image: url(img/lago.png);
     background-size: cover;
     display: block;
-    text-align: start;
-    h3 {
-        margin-top: 15%;
-        margin-left: 25px;
-        font-size: 2em;
-    }
-    p{
-        font-size: 1.5em;
-        color: white;
-        margin-left: 25px;
-    }
+    text-align: left;
+}
+
+#Grid article:nth-of-type(4) h3 {
+    margin-top: 15%;
+    margin-left: 25px;
+    font-size: 2em;
+}
+
+#Grid article:nth-of-type(4) p {
+    font-size: 1.5em;
+    color: white;
+    margin-left: 25px;
 }
 
 #Grid article:nth-of-type(5) {
@@ -608,13 +611,15 @@ footer{
         flex-direction: column;
     }
 
-    #titulosBanner{
-        width: 58%;
-        margin-left: 2em;
-        h3, h1{
-            text-align: start;
-        }
-    }
+#titulosBanner {
+    width: 58%;
+    margin-left: 2em;
+}
+
+#titulosBanner h3,
+#titulosBanner h1 {
+    text-align: left;
+}
     
 
     #formulario form input:nth-of-type(1),
@@ -659,11 +664,12 @@ margin-top: 2em;
 #Grid article:nth-of-type(4) {
     grid-column: 3 / span 2;
     grid-row: 1;
-    background-color: #ccc;
-    p{
-        font-size: 1.2em;
-        margin-right: 15px;
-    }
+    background-color: white;
+}
+
+#Grid article:nth-of-type(4) p {
+    font-size: 1.2em;
+    margin-right: 15px;
 }
 
 #Grid article:nth-of-type(5) {
